@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Soft Commerce Ltd. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- global framework interfaces :: data mapping-->
+    <preference for="NextEdge\Core\Framework\DataMap\StatusToFaMappingInterface" type="NextEdge\Core\Framework\DataMap\StatusToFaMapping"/>
+    <preference for="NextEdge\Core\Framework\DataMap\StatusToLabelMappingInterface" type="NextEdge\Core\Framework\DataMap\StatusToLabelMapping"/>
+    <!-- global framework interfaces :: data storage-->
+    <preference for="NextEdge\Core\Framework\DataStorageInterface" type="NextEdge\Core\Framework\DataStorage"/>
+    <preference for="NextEdge\Core\Framework\EntityDataStorageInterface" type="NextEdge\Core\Framework\EntityDataStorage"/>
+    <preference for="NextEdge\Core\Framework\DataStorage\OutputArrayInterface" type="NextEdge\Core\Framework\DataStorage\OutputArray"/>
+    <preference for="NextEdge\Core\Framework\DataStorage\OutputArrayPrintReadableInterface" type="NextEdge\Core\Framework\DataStorage\OutputArrayPrintReadable"/>
+    <preference for="NextEdge\Core\Framework\DataStorage\OutputHtmlInterface" type="NextEdge\Core\Framework\DataStorage\OutputHtml"/>
+    <preference for="NextEdge\Core\Framework\DataStorage\OutputMessageManagerInterface" type="NextEdge\Core\Framework\DataStorage\OutputMessageManager"/>
+    <preference for="NextEdge\Core\Framework\DataStorage\StatusPredictionInterface" type="NextEdge\Core\Framework\DataStorage\StatusPrediction"/>
+    <preference for="NextEdge\Core\Framework\IsAssociativeArrayInterface" type="NextEdge\Core\Framework\IsAssociativeArray"/>
+    <preference for="NextEdge\Core\Framework\IsMultidimensionalArrayInterface" type="NextEdge\Core\Framework\IsMultidimensionalArray"/>
+    <preference for="NextEdge\Core\Framework\SearchMultidimensionalArrayInterface" type="NextEdge\Core\Framework\SearchMultidimensionalArray"/>
+    <preference for="NextEdge\Core\Framework\String\ParseStringInterface" type="NextEdge\Core\Framework\String\ParseString"/>
+    <!-- global framework interfaces :: DB -->
+    <preference for="NextEdge\Core\Framework\DB\QueryResultDataTypeConverterInterface" type="NextEdge\Core\Framework\DB\QueryResultDataTypeConverter"/>
+    <!-- global framework interfaces :: message storage -->
+    <preference for="NextEdge\Core\Framework\MessageStorageInterface" type="NextEdge\Core\Framework\MessageStorage"/>
+    <preference for="NextEdge\Core\Framework\MessageStorage\OutputArrayInterface" type="NextEdge\Core\Framework\MessageStorage\OutputArray"/>
+    <preference for="NextEdge\Core\Framework\MessageStorage\OutputConsoleInterface" type="NextEdge\Core\Framework\MessageStorage\OutputConsole"/>
+    <preference for="NextEdge\Core\Framework\MessageStorage\OutputHtmlInterface" type="NextEdge\Core\Framework\MessageStorage\OutputHtml"/>
+    <preference for="NextEdge\Core\Framework\MessageStorage\OutputMessageManagerInterface" type="NextEdge\Core\Framework\MessageStorage\OutputMessageManager"/>
+    <preference for="NextEdge\Core\Framework\MessageStorage\StatusPredictionInterface" type="NextEdge\Core\Framework\MessageStorage\StatusPrediction"/>
+    <!-- global config ::: interface | repository | management -->
+    <preference for="NextEdge\Core\Model\Config\DateTimeLocaleInterface" type="NextEdge\Core\Model\Config\DateTimeLocale"/>
+    <preference for="NextEdge\Core\Model\Config\DeveloperInterface" type="NextEdge\Core\Model\Config\Developer"/>
+    <!-- Catalog modules ::: interface | repository -->
+    <preference for="NextEdge\Core\Model\Catalog\FileImageManagementInterface" type="NextEdge\Core\Model\Catalog\FileImageManagement"/>
+    <preference for="NextEdge\Core\Model\Catalog\GetCatalogCategoryDataInterface" type="NextEdge\Core\Model\Catalog\GetCatalogCategoryData"/>
+    <preference for="NextEdge\Core\Model\Catalog\GetConfigurableAttributeOptionsInterface" type="NextEdge\Core\Model\Catalog\GetConfigurableAttributeOptions"/>
+    <preference for="NextEdge\Core\Model\Catalog\GetProductAttributeDataInterface" type="NextEdge\Core\Model\Catalog\GetProductAttributeData"/>
+    <preference for="NextEdge\Core\Model\Catalog\IsCatalogProductSuperLinkInterface" type="NextEdge\Core\Model\Catalog\IsCatalogProductSuperLink"/>
+    <preference for="NextEdge\Core\Model\Catalog\MediaManagementInterface" type="NextEdge\Core\Model\Catalog\MediaManagement"/>
+    <preference for="NextEdge\Core\Model\Catalog\SkuStorageInterface" type="NextEdge\Core\Model\Catalog\SkuStorage"/>
+    <!-- Customer modules :: interface | repository -->
+    <preference for="NextEdge\Core\Model\Customer\GetCustomerRawDataInterface" type="NextEdge\Core\Model\Customer\GetCustomerRawData"/>
+    <!-- Eav modules ::: interface | repository -->
+    <preference for="NextEdge\Core\Model\Eav\AttributeManagementInterface" type="NextEdge\Core\Model\Eav\AttributeManagement"/>
+    <preference for="NextEdge\Core\Model\Eav\GetAttributeBackendTableInterface" type="NextEdge\Core\Model\Eav\GetAttributeBackendTable"/>
+    <preference for="NextEdge\Core\Model\Eav\GetAttributeEntityTypeDataInterface" type="NextEdge\Core\Model\Eav\GetAttributeEntityTypeData"/>
+    <preference for="NextEdge\Core\Model\Eav\GetAttributeEntityTypeIdInterface" type="NextEdge\Core\Model\Eav\GetAttributeEntityTypeId"/>
+    <preference for="NextEdge\Core\Model\Eav\GetAttributeSetByAttributeInterface" type="NextEdge\Core\Model\Eav\GetAttributeSetByAttribute"/>
+    <preference for="NextEdge\Core\Model\Eav\GetAttributeSetDataInterface" type="NextEdge\Core\Model\Eav\GetAttributeSetData"/>
+    <preference for="NextEdge\Core\Model\Eav\GetDefaultAttributeSetIdInterface" type="NextEdge\Core\Model\Eav\GetDefaultAttributeSetId"/>
+    <preference for="NextEdge\Core\Model\Eav\GetEavAttributeOptionValueDataInterface" type="NextEdge\Core\Model\Eav\GetEavAttributeOptionValueData"/>
+    <preference for="NextEdge\Core\Model\Eav\GetEntityTypeIdInterface" type="NextEdge\Core\Model\Eav\GetEntityTypeId"/>
+    <!-- vendor module list ::: interface -->
+    <preference for="NextEdge\Core\Model\ModuleListProviderInterface" type="NextEdge\Core\Model\ModuleListProvider"/>
+    <!-- model source options ::: interface -->
+    <preference for="NextEdge\Core\Model\Source\StatusInterface" type="NextEdge\Core\Model\Source\Status"/>
+    <!-- model utilities -->
+    <preference for="NextEdge\Core\Model\Utils\GetEntityMetadataInterface" type="NextEdge\Core\Model\Utils\GetEntityMetadata"/>
+    <!-- Store modules ::: interface | repository -->
+    <preference for="NextEdge\Core\Model\Store\WebsiteStorageInterface" type="NextEdge\Core\Model\Store\WebsiteStorage"/>
+    <!-- Logger -->
+    <preference for="NextEdge\Core\Logger\LogProcessorInterface" type="NextEdge\Core\Logger\LogProcessor"/>
+    <type name="NextEdge\Core\Logger\Handler\RotationSteamHandler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <virtualType name="NextEdge\Core\VirtualStreamHandler" type="Magento\Framework\Logger\Handler\Base">
+        <arguments>
+            <argument name="fileName" xsi:type="string">var/log/softcommerce/debug.log</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="NextEdge\Core\VirtualRotationStreamHandler" type="NextEdge\Core\Logger\Handler\RotationSteamHandler">
+        <arguments>
+            <argument name="fileName" xsi:type="string">var/log/softcommerce/debug.log</argument>
+        </arguments>
+    </virtualType>
+    <type name="NextEdge\Core\Logger\LogProcessor">
+        <arguments>
+            <argument name="handlers" xsi:type="array">
+                <item name="debug" xsi:type="object">NextEdge\Core\VirtualStreamHandler</item>
+                <item name="rotation_debug" xsi:type="object">NextEdge\Core\VirtualRotationStreamHandler</item>
+                <item name="mail" xsi:type="object">NextEdge\Core\Logger\Handler\MailStreamHandler</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- CLI -->
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="pub:static:clean" xsi:type="object">NextEdge\Core\Console\Command\CleanStaticViewFiles</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
